@@ -22,7 +22,7 @@ define Package/python-pytz
   DEPENDS:=+python
 endef
 
-define Package/ecdsa/description
+define Package/pytz/description
    World timezone definitions, modern and historical
 endef
 
@@ -32,7 +32,7 @@ define Build/Compile
 	)
 endef
 
-define Package/python-ecdsa/install
+define Package/python-pytz/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
 		$(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
